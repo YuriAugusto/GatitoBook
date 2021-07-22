@@ -8,8 +8,12 @@ const routes: Routes = [
     redirectTo: 'home',//aqui eu defino o componente que será exibido
   },
   {
-    path: 'home',
+    path: 'home',//loadChildren permite que o carregamento lazy mode seja feito, ou seja, a página só é carregada sob demanda
     loadChildren:() => import('./home/home.module').then((m) => m.HomeModule),
+  },
+  {
+    path: 'animais',
+    loadChildren:() => import('./animais/animais.module').then((m) => m.AnimaisModule),
   }
 
 ];
