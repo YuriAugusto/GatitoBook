@@ -3,9 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'',//se a url for vazia ele é redirecionado a home
+    path: '',//se a url for vazia ele faz o redirecionamento através do redirectTo
     pathMatch: 'full',//faz o tratamento de retirar os espaços, ex: se o usuário digitar a url: google .com, com o pathMath: 'full' a url será lida assim: google.com
-    redirectTo: 'home',//assim que ele acessar ele já irá para home
+    redirectTo: 'home',//aqui eu defino o componente que será exibido
   },
   {
     path: 'home',
