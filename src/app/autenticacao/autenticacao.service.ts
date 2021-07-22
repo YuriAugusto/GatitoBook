@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Observable } from 'rxjs';
 
-@Injectable({
+@Injectable({//essa anotação permite que essa classe seja injetada em outras classes
   providedIn: 'root'
 })
 export class AutenticacaoService {
