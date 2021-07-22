@@ -12,7 +12,7 @@ import { MensagemComponent } from './mensagem.component';
     CommonModule
   ],
   exports:[
-
-  ]
+    MensagemComponent
+  ],
 })
 export class MensagemModule { }

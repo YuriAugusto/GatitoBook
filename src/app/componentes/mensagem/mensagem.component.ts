@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MensagemComponent implements OnInit {
 
-  @Input()
+  @Input()//serve para a variável mensagem receber a entrada a partir do html
   mensagem = '';
 
   constructor() { }

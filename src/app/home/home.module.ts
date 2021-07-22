@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { LoginComponent } from './login/login.component';
+import { MensagemModule } from '../componentes/mensagem/mensagem.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { LoginComponent } from './login/login.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    FormsModule
+    FormsModule,
+    MensagemModule
   ],
   exports: [HomeComponent],
 })/* em exports: eu declaro tudo que será exportado para que no app.module eu importe o modulo atual e por fim possa utilizar esse os exports em toda aplicação*/
